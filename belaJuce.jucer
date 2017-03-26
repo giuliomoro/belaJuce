@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="UXAkvZ" name="belaJuce" projectType="consoleapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.belaJuce" includeBinaryInAppConfig="1"
+              jucerVersion="4.3.0">
+  <MAINGROUP id="kKbziB" name="belaJuce">
+    <GROUP id="{C39D5321-953A-7B62-8782-04A376D025E8}" name="Source">
+      <FILE id="RVmDBT" name="default_main.cpp" compile="1" resource="0"
+            file="Source/default_main.cpp"/>
+      <FILE id="Yag7mj" name="render.cpp" compile="1" resource="0" file="Source/render.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraLinkerFlags="-L/root/Bela/lib&#10;-L/usr/xenomai/lib"
+                externalLibraries="bela&#10;rt&#10;native&#10;xenomai" extraCompilerFlags="-I/root/Bela/include&#10;-I/usr/xenomai/include">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="3" targetName="belaJuce"
+                       linuxArchitecture="-march=armv7"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="belaJuce"
+                       linuxArchitecture="-march=armv7"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Desktop/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_USE_CURL="disabled"/>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
