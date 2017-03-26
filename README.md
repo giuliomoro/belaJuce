@@ -29,7 +29,7 @@ dpkg -i libcurl4-openssl-dev_7.38.0-4+deb8u5_armhf.deb
 * Check that the Modules paths match your computer's configuration and JUCE can find the modules.
 * tick the box "Copy the module into the project folder" for each module, save the project and double check that Juce created the appropriate folders in `JuceLibraryCode/modules`
 
-### Build the Project
+## Build the Project
 
 On Bela:
 ```
