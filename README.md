@@ -19,7 +19,8 @@ then copy it to the board and install it with:
 ```
 dpkg -i libcurl4-openssl-dev_7.38.0-4+deb8u5_armhf.deb
 ```
-Note: if you add more JUCE modules you may need to install more dependencies.
+* *Note*: if you add more JUCE modules you may need to install more dependencies.
+* *Note2*: in this project I disabled JUCE_USE_CURL, yet it is still a dependency. See [here](https://forum.juce.com/t/sigill-when-running-blocksdrawing-on-beaglebone-black/19779/3)
 * Get yourself a copy of [JUCE](https://www.juce.com/get-juce).
 
 ## Prepare the project
