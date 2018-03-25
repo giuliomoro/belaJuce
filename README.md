@@ -2,7 +2,7 @@ This project contains a sample Juce project which should compile on Bela and cal
 
 
 ## Setup
-* Update your board with the Bela code from the branch `dev-libbela` (see [here](https://github.com/BelaPlatform/Bela/wiki/Updating-Bela#getting-the-experimental-release) how to update the board).
+* Update your board with the latest Bela code(see [here](https://github.com/BelaPlatform/Bela/wiki/Updating-Bela) how to update the board).
 * You then have to do the following in order to build the Bela library and make your dynamic linker aware of that:
 ```
 make coreclean
